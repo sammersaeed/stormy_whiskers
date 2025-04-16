@@ -48,11 +48,11 @@ button {
 .outer-container {
   width: 99%;
   height: 99%;
-  background: var(--lavender);
+  background-color: var(--lavender);
   /* border: 10px solid var(--coral); */
   /* position:relative; */
   margin: 5px;
-  padding: 0 15 10px 0;
+  padding: 0 10px 10px 0;
 }
 
 .game-window {
@@ -70,6 +70,8 @@ button {
   width: 100%;
   background-color: white;
   z-index: 10;
+  /* margin: 5px; */
+  padding: 0 10px 10px 0;
   left: 0px;
   top: 0px;
 }
@@ -171,6 +173,8 @@ button {
   text-align: center;
   display: flex;
   justify-content: space-between;
+  /* margin: 5px; */
+  padding: 0 10px 10px 0;
 }
 #landing-header h1{
   font-size: 5rem;
@@ -213,7 +217,7 @@ button {
 /* top: 15px;*/
 
   display:flex;
-  margin-top: -730px;
+  margin-top: -975px;
   /* margin-left:340px; */
   justify-content: center;
   align-items:flex-start;
@@ -225,8 +229,8 @@ button {
   position:absolute;
   border: solid 5px white;
   background-color: var(--sunset);
-  height: 690px;
-  width: 600px;
+  height: 70%;
+  width: 45%;
 
   font-size: 40px;
   color: black;
@@ -240,21 +244,21 @@ button {
     background-color: var(--coral);
     color: black;
 }
-   .difficulty-button.active{
+.difficulty-button.active{
     border-width: 10px;
     border-color: var(--papaya-whip);
     text-decoration: underline;
     font-weight: bold;
 }
   
-   .close-button{
+.close-button{
     margin-top: 100px;
     width: 180px;
     height: 100px;
     background-color: var(--coral);
     color: black;
 }
- .slidecontainer {
+.slidecontainer {
   width: 100%;
 }
 
@@ -300,13 +304,17 @@ button {
     text-align: center;
     height: 100%;
     width: 100%;
-    margin-top: 710px; /*help*/
+    margin-top: 975px; /*help*/
+    margin: 10px;
+    margin-top: 975px; /*help*/
+  padding: 0 20px 10px 0;
 }
 
 #tutorial-panel{
 display: none;
 justify-content: center;
 height:100%;
+width: 100%;
 background-color: gainsboro;
 }
 
@@ -429,10 +437,10 @@ font-size: 50px;
   display:none;
   position:absolute;
   background-color: var(--sunset);
-  height:275px;
-  width: 550px;
-  top: 250px;
-  right: 365px;
+  height: 25%;
+  width: 40%;
+  top: 38%;
+  right: 30%;
   font-size: 40px;
   color: black;
   text-align: center;
@@ -441,11 +449,11 @@ font-size: 50px;
 }
 
 #gameover-words{
-  margin-bottom: 10px ;
+  margin-bottom: 0 ;
 }
 
 .startover-button{
-  margin-top:0px;
+  margin-top:0;
   width:200px;
   height:75px;
 }
