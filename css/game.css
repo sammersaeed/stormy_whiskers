@@ -1,0 +1,451 @@
+:root {
+  --lavender: #E4E0F7;
+  --thistle: #BAAFCD;
+  --papaya-whip: #FFEFD5;
+  --rose: #E9C5C5;
+  --sage: #A9B8A3;
+
+  --lemon-chiffon: #FBF8CC;
+  --light-sage: #D9E4D0;
+  --champagne-pink: #FDE4CF;
+  --tea-rose-red: #FFCFD2;
+  --pink-lavender: #F1C0E8;
+  --mauve: #CFBAF0;
+  --jordy-blue: #A3C4F3;
+  --non-photo-blue: #90DBF4;
+  --electric-blue: #8EECF5;
+  --aquamarine: #98F5E1;
+  --celadon: #B9FBC0;
+
+  --contrast: #1B4332;
+  --deep-moss: #1B4332;
+  --violet: #4B296B;
+  --raspberry: #AA4465;
+  --tea-green: #C4F1BE;
+  --periwinkle: #AFBBF2;
+  --coral: #DD9787;
+  --sunset: #F6D8AE;
+}
+
+/* ============ Winter 2024 EECS 493 Assignment 3 Starter Code ============ */
+
+/* Main Containers */
+body,
+button {
+  /* font-family: Georgia, 'Times New Roman', Times, serif; */
+  font-family: cursive;
+}
+body {
+  overflow: hidden;
+  background-color: var(--coral);
+
+}
+
+button {
+  font-size: xx-large;
+}
+
+.outer-container {
+  width: 99%;
+  height: 99%;
+  background: var(--lavender);
+  /* border: 10px solid var(--coral); */
+  /* position:relative; */
+  margin: 5px;
+  padding: 0 15 10px 0;
+}
+
+.game-window {
+  height: 100%;
+  width: 100%;
+  float: left; 
+  position: relative;
+
+}
+
+/* Game Section */
+#actual-game {
+  position:absolute;
+  height: 100%;
+  width: 100%;
+  background-color: white;
+  z-index: 10;
+  left: 0px;
+  top: 0px;
+}
+
+/* Game Section */
+
+
+.curRain {
+  position: absolute;
+  height: auto;
+  width: 5%;
+  z-index: 9;
+  right: 0px;
+  top: 0px;
+}
+
+.curRain img {
+  position: absolute;
+  z-index: 10;
+  height: auto;
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+}
+
+#avatar {
+  position: absolute;
+  height: 5%;
+  width: 5%;
+  z-index: 9;
+  right: 607px;
+  top: 320px;
+}
+
+#avatar img {
+  position: absolute;
+  z-index: 10;
+  height: auto;
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+}
+
+
+
+.curFish {
+  position: absolute;
+  height: auto;
+  width: 5%;
+  z-index: 9;
+  right: 0px;
+  top: 0px;
+}
+/* this is called css selector, selects all imgs in this class */
+.curFish img {
+  position: absolute;
+  z-index: 10;
+  height: auto;
+  width: 100%;
+  left: -17px;
+  top: -15px;
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+}
+.curUmbrella {
+  position: absolute;
+  height: auto;
+  width: 5%;
+  z-index: 9;
+  right: 0px;
+  top: 0px;
+}
+/* this is called css selector, selects all imgs in this class */
+.curUmbrella img {
+  position: relative;
+  z-index: 10;
+  height: auto;
+  width: 100%;
+  left: -17px;
+  top: -15px;
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+}
+
+/* Add your stylings here */
+/* -- from Assignment 2 -- */
+
+#landing-header{
+  width: 100%; /*percentage of outer container, don't really need since 100% is default*/
+  height: 125px;
+  background-color: var(--light-sage);
+  border-bottom: 6px;
+  border-bottom-style: groove;
+  color: black;
+  text-align: center;
+  display: flex;
+  justify-content: space-between;
+}
+#landing-header h1{
+  font-size: 5rem;
+  margin-top: 0;
+}
+
+#landing-header img{ /*will effect images in landing-header div*/
+  height: 100%;
+}
+
+#landing-page{
+  text-align: center;
+  height: 100%; /*only width is 100% by default*/
+  background-image: url("../src/frontpage_background.jpg");
+}
+
+#landing-page button{
+  margin-top: 100px;
+  width: 20%;
+  height: 15%;
+  background-color: var(--thistle);
+  border: dotted 10px var(--light-sage);
+  border-radius: 40%;
+  color: black;
+  font-size: 3rem;
+}
+
+#bold{
+  font-weight: 600;
+  margin-bottom: 110px;
+}
+#bold-diff{
+  font-weight: 600;
+}
+.not-bold{
+  font-weight: normal;
+}
+
+#settings-page{
+/* top: 15px;*/
+
+  display:flex;
+  margin-top: -730px;
+  /* margin-left:340px; */
+  justify-content: center;
+  align-items:flex-start;
+  /*position:relative;*/
+}
+  
+#settings-panel{
+  display: none;
+  position:absolute;
+  border: solid 5px white;
+  background-color: var(--sunset);
+  height: 690px;
+  width: 600px;
+
+  font-size: 40px;
+  color: black;
+  text-align: center;
+  
+  }
+
+  .difficulty-button{
+    width: 180px;
+    height: 100px;
+    background-color: var(--coral);
+    color: black;
+}
+   .difficulty-button.active{
+    border-width: 10px;
+    border-color: var(--papaya-whip);
+    text-decoration: underline;
+    font-weight: bold;
+}
+  
+   .close-button{
+    margin-top: 100px;
+    width: 180px;
+    height: 100px;
+    background-color: var(--coral);
+    color: black;
+}
+ .slidecontainer {
+  width: 100%;
+}
+
+/* The slider itself */
+.slider {
+  -webkit-appearance: none;  /* Override default CSS styles */
+  appearance: none;
+  width: 100%; /* Full-width */
+  height: 25px; /* Specified height */
+  background: #d3d3d3; /* Grey background */
+  outline: none; /* Remove outline */
+  opacity: 0.7; /* Set transparency (for mouse-over effects on hover) */
+  -webkit-transition: .2s; /* 0.2 seconds transition on hover */
+  transition: opacity .2s;
+}
+
+/* Mouse-over effects */
+.slider:hover {
+  opacity: 1; /* Fully shown on mouse-over */
+}
+
+/* The slider handle (use -webkit- (Chrome, Opera, Safari, Edge) and -moz- (Firefox) to override default look) */
+.slider::-webkit-slider-thumb {
+  -webkit-appearance: none; /* Override default look */
+  appearance: none;
+  width: 25px; /* Set a specific slider handle width */
+  height: 25px; /* Slider handle height */
+  background: var(--coral); /* Green background */
+  border:  solid 3px var(--papaya-whip); /* Border around the slider handle */
+  cursor: pointer; /* Cursor on hover */
+}
+
+.slider::-moz-range-thumb {
+  width: 25px; /* Set a specific slider handle width */
+  height: 25px; /* Slider handle height */
+  background: #04AA6D; /* Green background */
+  cursor: pointer; /* Cursor on hover */
+}
+
+
+#tutorial-page{
+    display:relative;
+    text-align: center;
+    height: 100%;
+    width: 100%;
+    margin-top: 710px; /*help*/
+}
+
+#tutorial-panel{
+display: none;
+justify-content: center;
+height:100%;
+background-color: gainsboro;
+}
+
+#tutorial-page-img{ /*will effect images in landing-header div*/
+    width:100px;
+    padding-left: 35px;
+    padding-right: 35px;
+    /*margin-left: 70px;*/
+}
+
+#howtoplay{
+  font-size: 75px;
+  font-weight: 600;
+  margin-bottom: 35px;
+}
+
+#tutor-font{
+  font-size: 50px;
+  font-weight: 600;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+#italics{
+  font-weight:normal;
+  font-style: italic;
+}
+
+#norm{
+  font-weight:normal;
+  font-style: normal;
+}
+
+.start-button{
+  margin-top:35px;
+  width:200px;
+  height:75px;
+}
+/* -- ending from Assignment 2 -- */
+
+/* -- start of Assignment 3 Style -- */
+
+.rainSection{
+font-size: 50px;
+} 
+  
+#getReadySection{
+  font-size: 75px;
+  text-align: center;
+  width: 500px;
+  height: 350px;
+  position: flex;
+  justify-content: center;
+}
+
+#getReady_words{
+  font-size: 75px;
+  margin-bottom:40px;
+  font-weight: bold;
+}
+
+#arrow-keys{
+  font-size: 50px;
+  margin-top: 30px;
+  /*display:flex;*/
+ 
+  /* text-align: center;*/
+
+}
+
+
+#score-panel{
+  font-size: 30px;
+  position: absolute;
+  text-align: center;
+  top: 0%;
+  right: 0%;
+}
+
+#score_word{
+  font-size: 40px;
+}
+
+#score_num{
+  font-size: 40px;
+
+}
+
+#score_num_end{
+  font-size: 40px;
+  margin-top: 10px;
+  margin-bottom:0px;
+  
+}
+
+#danger_word{
+  font-size: 40px;
+}
+
+#danger_num{
+  font-size: 40px;
+}
+
+#level_word{
+  font-size: 40px;
+}
+
+#level_num{
+  font-size: 40px;
+}
+
+#dieSound audio{
+  font-size: 50px;
+}
+#collectSound audio{
+  font-size: 50px;
+}
+
+#gameover-panel {
+  display:none;
+  position:absolute;
+  background-color: var(--sunset);
+  height:275px;
+  width: 550px;
+  top: 250px;
+  right: 365px;
+  font-size: 40px;
+  color: black;
+  text-align: center;
+  /*margin-bottom: 70px;*/
+  border: solid 5px white;
+}
+
+#gameover-words{
+  margin-bottom: 10px ;
+}
+
+.startover-button{
+  margin-top:0px;
+  width:200px;
+  height:75px;
+}
