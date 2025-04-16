@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" href="src/avatars/cooper_avatar.png" />
+    <link rel="stylesheet" type="text/css" href="css/html5reset.css">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <!-- <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> -->
+    <!-- 
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&family=Oswald:wght@200..700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&family=Oswald:wght@200..700&display=swap" rel="stylesheet"> 
+    -->
+    <!-- Lightbox CSS -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.4/css/lightbox.min.css" rel="stylesheet">
+
+    <title>Stormy Whiskers: Home</title> 
+</head>
+<body>
+    <div class="skip"><a href="#main">Skip to Main Content</a></div>
+    <header>
+        <div class="header-container">
+            <!-- <a href="index.html" class="logo"> -->
+            <img class="logo" id="logo" src="src/avatars/cooper_avatar.png" alt="UMSI Logo">
+            <!-- </a> -->
+            <h1 class="page-title">Stormy Whiskers</h1>
+            <img class="logo" id="logo" src="src/avatars/persephone_avatar.png" alt="UMSI Logo">
+        
+        </div>
+        <!-- <h1>About</h1> -->
+    </header>
+
+    <main id="main" class="container">
+        <div class="about">
+            <div class="about-text">
+            <h2>Meet the Kitties</h2>
+            <p>These are the kitties that you will be playing with in the game! Feel free to read their biographies to learn more about them! </p>
+        </div>
+
+        <div class="play-container">
+            <a href="game.html"><button class="play-button">Play Game!</button></a>
+        </div>
+        
+            
+
+            <div class="bio-container" id="cooper-bio">
+                <h3 class="name">Cooper <span class="unbold">Bassam Saeed</span></h3>
+                <div class="slideshow-container">
+                    <button class="arrow left" onclick="moveSlide(this, -1)">&#10094;</button>
+                    
+                    <div class="slides-wrapper">
+                        <a href="src/images/cooper/flowers.jpg" data-lightbox="cooper-slideshow">
+                            <img src="src/images/cooper/flowers.jpg" alt="Cat 1" class="slide-image active">
+                        </a>
+                        <a href="src/images/cooper/handsome.jpg" data-lightbox="cooper-slideshow">
+                            <img src="src/images/cooper/handsome.jpg" alt="Cooper being handsome" class="slide-image" >
+                        </a>
+                        <a href="src/images/cooper/yawn.jpg" data-lightbox="cooper-slideshow">
+                            <img src="src/images/cooper/yawn.jpg" class="slide-image" alt="Cooper yawning with his mouth open wide">
+                        </a>
+                    </div>
+                    <button class="arrow right" onclick="moveSlide(this, 1)">&#10095;</button>
+                </div>
+
+                <ul class="bio-list">
+                    <li><span class="bold">Age:</span> 3 years</li>
+                    <li><span class="bold">Favorite Toy:</span> fluffy octopus on a string </li>
+                    <li><span class="bold">Favorite Activities:</span> cuddling, sleeping, and bird watching</li>
+                    <li><span class="bold">Likes:</span> people, his window perch, blankets, and conversation</li>
+                    <li><span class="bold">Dislikes:</span> water, being alone, and loud noises </li>
+                    <li><span class="bold">Origin:</span> The Humane Society </li>
+                    <li><span class="bold">Nicknames:</span> "Habibi" which translates to "My Dear" in Arabic, "My little himbo"</li>
+                    <li><span class="bold">Avatar: </span> <img id="logo" src="src/avatars/cooper_avatar.png" alt="UMSI Logo"></li>
+                </ul>
+            </div>
+
+            <div class="bio-container" id="persephone-bio">
+                <h3 class="name">Persephone<span class="unbold"> Biller</span></h3>
+                <div class="slideshow-container">
+                    <button class="arrow left" onclick="moveSlide(this, -1)">&#10094;</button>
+                    
+                    <div class="slides-wrapper">
+                        <a href="src/images/persephone/persephone_bigeyes.jpg" data-lightbox="persephone-slideshow">
+                            <img src="src/images/persephone/persephone_bigeyes.jpg" class="slide-image active" alt="Cat 1">
+                        </a>
+                        <a href="src/images/persephone/persephone_naptime.jpg" data-lightbox="persephone-slideshow">
+                            <img src="src/images/persephone/persephone_naptime.jpg" class="slide-image" alt="Cat 2">
+                        </a>
+                    </div>
+                    <button class="arrow right" onclick="moveSlide(this, 1)">&#10095;</button>
+                </div>
+                <ul class="bio-list">
+                    <li><span class="bold">Age:</span> 1.5 years</li>
+                    <li><span class="bold">Favorite Toy:</span> electronic flapping fish </li>
+                    <li><span class="bold">Favorite Activities:</span> being a ninja, wrestling, and stalking people while they sleep</li>
+                    <li><span class="bold">Likes:</span> the fish tank, the window ledge, and chapstick</li>
+                    <li><span class="bold">Dislikes:</span> the fish tank, outside, and bellyrubs </li>
+                    <li><span class="bold">Origin:</span> A barn </li>
+                    <li><span class="bold">Nicknames:</span> "Princess", most of her other nicknames are not appropriate </li>
+                    <li><span class="bold">Avatar: </span> <img id="logo" src="src/avatars/persephone_avatar.png" alt="UMSI Logo"></li>
+                </ul>
+            </div>
+
+        </div>
+
+
+
+    </main>
+</body>
+
+    <script src="scripts/slideshow.js"></script>
+    <!-- Lightbox JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.4/js/lightbox.min.js"></script>
+
+
+</html>

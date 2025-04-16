@@ -1,0 +1,41 @@
+<nav>
+                <ul>
+                    <!-- <li class="current"><a href = "index.html" class="current">Home</a></li> -->
+                    <!-- <li><a href = "game.html">Play!</a></li> -->
+                    <!-- <li><a href = "firstgen.html">First Gen</a></li>
+                    <li><a href = "tutoring.html">Tutoring</a></li>  -->
+                </ul>
+            </nav>
+
+/* Navigation Styling */
+nav {
+    display: inline;
+    width: 0%;
+    color: white;
+    background-color: var(--raspberry);
+    /* text-align: center; */
+    
+}
+
+/* Make the nav bar inline */
+nav ul {
+    list-style: none;
+    /* gap: 5%; Space between menu items */
+    padding: 0;
+    margin: 0;
+    text-align: center;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+nav li {
+    display: inline;
+    padding: 2%; 
+    /* border: inset 1px #ffffff; */
+}
+
+nav a {
+    color: white; 
+    font-weight: bold; 
+    text-decoration: none;
+}

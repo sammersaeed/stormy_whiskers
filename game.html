@@ -1,0 +1,159 @@
+<!-- =========== Winter 2024 EECS 493 Assignment 3 Starter Code =========== -->
+<html lang="en">
+  <audio id="collectSound">
+    <source src = "./src/audio/collect.mp3" >;
+  </audio>
+  <audio id = "dieSound">
+    <source src = "./src/audio/die.mp3">;
+  </audio>
+<head>
+  <title>Stormy Whiskers: Play!</title>
+  <!-- JS
+  <script src='scripts/jquery.min.js'></script>
+  <script src='scripts/game.js'></script> -->
+  <!-- CSS -->
+  <link rel="stylesheet" type="text/css" href="css/game.css">
+  <link href="https://fonts.googleapis.com/css2?family=VT323&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+  <main>
+  <div class='outer-container'>
+    <div class='game-window'>
+      <!-- ================ ASSIGNMENT 2 CODE GOES HERE ================ -->
+      <!-- Main Menu -->
+      <div id="landing-page">
+        <div id="landing-header">
+          <img src="./src/avatars/cooper_avatar.png" alt="">
+          <img src="./src/images/rain.png" alt="">
+          <h1>Stormy Whiskers</h1>
+          <img src="./src/images/rain.png" alt="">
+          <img src="./src/avatars/persephone_avatar.png" alt="">
+        </div>
+        <div>
+          <button onclick="playGame_click()">Play Game!</button>
+        </div>
+        <div>
+          <a href="index.html"><button>Home Page</button></a>
+        </div>
+        <div>
+          <button onclick="settings_click()">Settings</button>
+        </div>
+      </div>
+      
+      <!-- Settings -->
+      <div id="settings-page">
+        <div id="settings-panel">
+          
+          <div id="bold">
+            Settings
+          </div>
+          
+          <div class="slidecontainer" id="bold">
+            
+            Volume:
+            
+            <!-- <span id="volume" class="not-bold"></span> -->
+            <label for="myRange" id="volume"></label>
+            <input label="volume" type="range" min="1" max="100" value="50" class="slider" id="myRange">
+          </div>
+          
+          <div>
+            <div id="bold-diff">
+              Difficulty
+            </div>
+            
+        
+            <button class="difficulty-button" id="easy" onclick="cur('easy')">Easy</button>
+            <button class="difficulty-button" id="normal" onclick="cur('normal')">Normal</button>
+            <button class="difficulty-button" id="hard" onclick="cur('hard')">Hard</button>
+          </div>
+          <div>
+            <button class="close-button" onclick="close_click()">Close</button>
+          </div>
+        </div>
+        
+        
+      </div>
+      
+      <!-- Tutorial -->
+      <div id="tutorial-page">
+        <div id="tutorial-panel">
+          <div id="howtoplay">
+            How to play
+          </div>
+          <div id="tutor-font">
+            Avoid <span id="italics">rains!</span>
+          </div>
+          <img src="./src/images/rain.png" id="tutorial-page-img" alt="Storm cloud">
+          
+          <div id="tutor-font">
+            Collect <span id="italics">umbrellas!</span> Travel <span id="norm">through</span> <span
+            id="italics">portals</span> <span id="norm">to the next level!</span>
+          </div> 
+          <img src="./src/images/umbrella.png" id="tutorial-page-img" alt="">
+          <img src="./src/images/fish.png" id="tutorial-page-img" alt="">
+          
+          <div id="tutor-font">
+            Gain <span id="norm">as many</span> <span id="italics"> points</span> <span id="norm"> as possible!</span>
+          </div>
+          
+          <button class="start-button" onclick="start_click()">Start</button>
+        </div>
+      </div>
+      
+      <!-- =================== ASSIGNMENT 2 CODE END =================== -->
+      
+      <!-- Actual Game -->
+      <div id="actual-game">
+        <!-- Get Ready -->
+        <div id="getReadySection">
+          <div id="getReady_words">Get Ready!<br></div>
+          <!--<img src="./src/arrowkeys.png" id="arrow-keys-img">-->
+          <img src="./src/images/arrowkeys.png" alt="up, down, left, right arrow keys"><br><span id ="arrow-keys">Use arrow keys to move!</span>
+      
+        </div>
+        
+        <!-- Rains -->
+        <div class="rainSection">
+          
+          <!--<img src="./src/player.gif" id="avatar">-->
+          <div id="avatar">
+          <img src="./src/avatars/cooper_avatar.png" alt="Cooper's Avatar">
+          </div>
+
+        </div>
+        <!-- Score Panel -->
+        <div id="score-panel">
+          <div id="score_word">
+            Score
+            <div id="score_num"></div>
+          </div>
+          <div id="danger_word">DANGER
+            <div id="danger_num"> </div>
+          </div>
+          <div id="level_word">Level
+            <div id="level_num"></div>
+          </div>
+        </div>
+        
+      </div>
+      
+      <!-- Gameover -->
+      <div id="gameover-panel">
+        <div id="gameover-words"> GAME OVER!</div>
+        YOU HAVE TO DRY OFF NOW!
+        <div id="score_num_end">
+          <button class="start-button" onclick="startOver_click()">Start Over</button>
+          </div>
+        <button class="start-button" onclick="startOver_click()">Start Over</button>
+      </div>
+    </div> <!-- end game-window -->
+  </div> <!-- end outer-container -->
+  </main>
+</body>
+<!-- JS -->
+<script src='scripts/jquery.min.js'></script>
+<script src='scripts/game.js'></script>
+</html>
