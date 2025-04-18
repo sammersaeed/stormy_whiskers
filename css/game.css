@@ -174,7 +174,8 @@ button {
   display: flex;
   justify-content: space-between;
   /* margin: 5px; */
-  padding: 0 10px 10px 0;
+  align-items: flex-start;
+  /* padding: 0 10px 10px 0; */
 }
 #landing-header h1{
   font-size: 5rem;
@@ -183,13 +184,12 @@ button {
 
 #landing-header img{ /*will effect images in landing-header div*/
   height: 100%;
+  width: auto;
 }
 
 #landing-page{
   text-align: center;
-  height: 100%; /*only width is 100% by default*/
-  background-image: url("../src/frontpage_background.jpg");
-}
+  height: 100%; /*only width is 100% by default*/}
 
 #landing-page button{
   margin-top: 100px;

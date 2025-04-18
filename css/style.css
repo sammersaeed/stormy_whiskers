@@ -36,7 +36,6 @@
 }
 
 
-
 /* Global Styles */
 body {
     background-color: var(--lavender);
@@ -226,3 +225,31 @@ body {
     cursor: pointer;
     margin: 1rem 0;
 }
+
+#landing-header{
+    width: 100%; /*percentage of outer container, don't really need since 100% is default*/
+    height: 125px;
+    background-color: var(--light-sage);
+    border-bottom: 6px;
+    border-bottom-style: groove;
+    color: black;
+    text-align: center;
+    display: flex;
+    justify-content: space-between;
+    /* margin: 5px; */
+    align-items: center;
+    /* padding: 0 10px 10px 0; */
+  }
+  #landing-header h1{
+    font-size: 5rem;
+    margin-top: 0;
+  }
+  
+  #landing-header img{ /*will effect images in landing-header div*/
+    height: 100%;
+    width: auto;
+  }
+
+  #landing-page{
+    text-align: center;
+    height: 100%; /*only width is 100% by default*/}
