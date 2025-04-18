@@ -248,7 +248,7 @@ button {
   transform: translate(-50%, -50%); /* centers based on its own size */
   border: solid 5px white;
   background-color: var(--sunset);
-  height: 65%;
+  height: 75%;
   width: 35%;
 
   font-size: 40px;
@@ -458,7 +458,7 @@ font-size: 50px;
   display:none;
   position:absolute;
   background-color: var(--sunset);
-  height: 25%;
+  height: 30%;
   width: 40%;
   top: 38%;
   right: 30%;
