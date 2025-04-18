@@ -103,8 +103,8 @@ button {
   height: 5%;
   width: 5%;
   z-index: 9;
-  right: 607px;
-  top: 320px;
+  right: 48%;
+  top: 48%;
 }
 
 #avatar img {
@@ -258,8 +258,8 @@ button {
   }
 
   .difficulty-button{
-    width: 180px;
-    height: 100px;
+    width: 30%;
+    height: 12%;
     background-color: var(--coral);
     color: black;
 }
@@ -271,9 +271,9 @@ button {
 }
   
 .close-button{
-    margin-top: 100px;
-    width: 180px;
-    height: 100px;
+    margin-top: 10%;
+    width: 40%;
+    height: 12%;
     background-color: var(--coral);
     color: black;
 }
@@ -367,9 +367,9 @@ background-color: gainsboro;
 }
 
 .start-button{
-  margin-top:35px;
-  width:200px;
-  height:75px;
+  margin-top:5%;
+  width: 20%;
+  height: 12%
 }
 /* -- ending from Assignment 2 -- */
 
@@ -382,9 +382,12 @@ font-size: 50px;
 #getReadySection{
   font-size: 75px;
   text-align: center;
-  width: 500px;
-  height: 350px;
-  position: flex;
+  width: 40%;
+  height: 25%;
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%, -50%); /* centers based on its own size */
   justify-content: center;
 }
 
@@ -471,7 +474,7 @@ font-size: 50px;
 }
 
 .startover-button{
-  margin-top:0;
-  width:200px;
-  height:75px;
+  margin-top: 2%;
+  width: 35%;
+  height: 25%;
 }
